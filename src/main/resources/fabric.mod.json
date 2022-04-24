@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "learningfabric",
+  "version": "${version}",
+
+  "name": "Learning Fabric",
+  "description": "This is the mod i am using to learn fabric modloader",
+  "authors": ["FaintLocket424"],
+  "license": "MIT",
+  "icon": "assets/learningfabric/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "space.faintlocket.learningfabric.LearningFabric"
+    ],
+    "server": [
+      "space.faintlocket.learningfabric.ServerLearningFabric"
+    ]
+  },
+  "mixins": [
+    "learningfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.1",
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
